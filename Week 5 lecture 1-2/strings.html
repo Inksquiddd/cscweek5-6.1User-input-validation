@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+    <html> 
+  <!-- Assignment 6.1 User input validation
+    1. allow user input of first and last 
+    2. Make variable containing first name + space + last name and zip
+    3. Check for how many character greater then> 20 present error
+        1. <less then 20, good entry
+    4. check to see if zip code is accurate
+    5. Good name and zip, give secret message
+add creative like font image etc
+comment on every line of code
+
+    Dieo Garcia
+    13 jun 2024
+        diegarci@uat.edu
+   -->
+
+<head>
+    <title>Input validation</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="code.js"></script>
+</head>
+<body> 
+<header>
+<h1> WELCOME TO  DIEGO GARCIA's INPUT VALIDATION PAGE</h1>
+</header>
+
+ <nav>
+    <h2>Navigation</h2>
+    <h3><a href="./index.html">Home</a>
+    <a href="./Boards.html">Boards</a><br>
+        <a href="./game.html">Game page</a><br>
+        <a href="./strings.html">Input validation page</a>
+    </h3>
+ </nav>
+<h2>
+    Input Validation section
+</h2>
+<div id="loginStatus">Press submit to login</div>
+<p>
+    please submit the following data for validation
+</p>
+<form id="submit credit" onsubmit="return false">
+    First Name: <input type="text" id="fName"><br>
+    Last Name: <input type="text" id="lName"><br>
+    Zip &nbsp; Code: <input typ="number" id="zipCode"><br>
+    <br>
+    <input type="submit" onclick="checkCreds()">
+</form>
+
+
+    <!-- Is zip code <a id= = "zipCodeDis"></a> valid? <div id= "zipTest"></div>
+    <script>
+    var zipCode = "85283";
+    var isValidZip = /(^\d{5}$)|(^\d{5}-\d{4}$)/.test(zipCode);
+    document.getElementById("zipTest").innerHTML = isValidZip;
+    document.getElementById("zipCodeDis").innerHTML = zipCode;
+    </script> -->
+
+
+
+
+
+</body>
+    </html>
